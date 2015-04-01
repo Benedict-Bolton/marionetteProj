@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+<script type="text/template" id="composite-template">
+  <h2>A Conversation</h2>
+  <p>
+    <h3><%= title %></h3>
+    <h4>About <%= topic =></h4>
+    
+  </p>
+  <p>
+    <h4>A Premise</h4>
+    <p><%= desc => </p>
+  <table class="pure-table pure-table-bordered">
+    <thread>
+      <tr><th>Name</th><th>Post</th></tr>
+    </thread>
+    <tbody>
+      <!-- The comment Item Views Will Go Here-->
+    </tbody>
+  </table> <br>
+  Add a Comment: <br>
+  Post Name <input id="newPost"> <br><br>
+  Post Content <input id="newText"> <br>
+  <button class="pure-button" id ="add">Add</button>
+  </script>
+
+<script type="text/template" id="post-template">
+
+  <td><%- title %></td><td><%- topic %></td><td><%- desc %></td>
+</script>
+
+<script type="text/template" id="first-template">
+
+  <h2> Template SpaceFiller </h2>
+  <blockquote>
+    Tiger got to hunt, bird got to fly, man got to ask Why Why Why?
+  </blockquote>
+</script>
+
+<div class="pure-g">
+  <div class="pure-u-1-12"></div>
+  <div class="pure-u-5-6">
+    <h1>A Page</h1>
+    <h4>Remember the Internet is Forever, especially Here</h4>
+
+<!--    <a href="#one"><button class="pure-button pure-button-primary">Go to page one </button> </a>
+    <a href="#two"><button class="pure-button pure-button-primary">Go to page two </button> </a>-->
+
+    <hr>
+    <div id="first-region">
+      Blank Space for Stuff
+    </div>
+    <hr>
+    <div id="second-region">
+      This is not the Top Region Boii
+    </div>
+    <hr>
+    <div id="third-region">
+      Not Sure if needed
+    </div>
+    <hr>
+    <div id="fourth-region">
+      Should only be view here if /talk/title is at top
+    </div>
+    
+
+  </div>
+
+</div>
+
+<script src="static/app.js"></script>
+{% endblock body %}
+
